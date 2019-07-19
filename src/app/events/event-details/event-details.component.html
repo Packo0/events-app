@@ -1,4 +1,4 @@
-<div class="container">
+<div [routerLink]="['/events', name.id]" routerLinkActive="router-link-active"  class="container">
   <img [src]="event?.imageUrl" [alt]="event?.name" class="event-image">
 
   <div class="row">
