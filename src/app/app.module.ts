@@ -1,7 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { EventsListComponent, EventThumbnailComponent, EventDetailsComponent, CreateEventComponent, EventService, EventRouteActivator, EventListResolver } from './events/index'
+import {
+  EventsListComponent,
+  EventThumbnailComponent,
+  EventDetailsComponent,
+  CreateEventComponent,
+  EventService,
+  EventRouteActivator,
+  EventListResolver,
+  CreateSessionComponent
+} from './events'
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/nav-bar.component'
 import { ToastrService } from './common/toastr.service'
@@ -24,7 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EventDetailsComponent,
     NavBarComponent,
     CreateEventComponent,
-    Error404Component
+    Error404Component,
+    CreateSessionComponent,
   ],
   providers: [
     EventService,
